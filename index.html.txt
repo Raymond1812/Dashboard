@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 32px;
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    h1 {
+      margin-bottom: 0.25em;
+    }
+
+    .quote {
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    /* Navigation grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .tile {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .tile:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .tile img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .tile h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Notes section */
+    .notes {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      min-height: 120px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      border: none;
+      resize: vertical;
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Section 1: Orientation -->
+  <h1>Home</h1>
+  <p class="quote">Remember who the fuck you are. Remember you matter. Your choices matter and you can do whatever the fuck you want.</p>
+
+  <!-- Section 2: Navigation Grid -->
+  <div class="grid">
+
+    <a class="tile" href="#">
+      <img src="image1.jpg" alt="">
+      <h3>Creative Projects</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image2.jpg" alt="">
+      <h3>Social & Events</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image3.jpg" alt="">
+      <h3>Competitions & Opportunities</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image4.jpg" alt="">
+      <h3>Job Applications</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image5.jpg" alt="">
+      <h3>Professional Development</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image6.jpg" alt="">
+      <h3>Life Admin</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image7.jpg" alt="">
+      <h3>Fitness & Hobbies</h3>
+    </a>
+
+    <a class="tile" href="#">
+      <img src="image8.jpg" alt="">
+      <h3>Random</h3>
+    </a>
+
+  </div>
+
+  <!-- Section 3: Notes -->
+  <div class="notes">
+    <h3>Notes</h3>
+    <textarea placeholder="Dump thoughts here. Clean up later."></textarea>
+  </div>
+
+</body>
+</html>
